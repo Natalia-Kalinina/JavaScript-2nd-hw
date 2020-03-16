@@ -27,7 +27,11 @@ console.log(userObj);
  * userObj.lastName ← Фамилия'
  * userObj.fullName() → 'Имя Фамилия'.
  */
-
+userObj.fullName = function () {
+        return userObj.firstName + ' ' + userObj.lastName;
+    
+}
+console.log(userObj.fullName());
 /*
  * #3
  *
