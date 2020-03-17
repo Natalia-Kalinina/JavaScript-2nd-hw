@@ -44,11 +44,13 @@ console.log(userObj.fullName());
  *
  * При выполнении задачи не используйте оператор if, требуется решение с логическим оператором ||.
  */
-
+function defUpperStr(x) {
+    return (x ||'default text').toUpperCase(); 
+}
 /* eslint-disable capitalized-comments */
-// console.log(defUpperStr('My text')); // MY TEXT
+console.log(defUpperStr('My text')); // MY TEXT
 
-// console.log(defUpperStr()); // DEFAULT TEXT
+console.log(defUpperStr()); // DEFAULT TEXT
 
 /*
  * #4
