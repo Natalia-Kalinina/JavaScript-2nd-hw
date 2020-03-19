@@ -68,12 +68,18 @@ console.log(defUpperStr()); // DEFAULT TEXT
  * evenFn(15) → [2, 4, 6, 8, 10, 12, 14]
  * evenFn(20) → [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
  */
+function evenFn(n) {
+    var arr = [];
+    for (var i = 1; i <= n; i++) if (i % 2 === 0) arr.push(i);
 
-// console.log(evenFn(10)); // [2, 4, 6, 8, 10]
+    return arr;
+   
+}
+console.log(evenFn(10)); // [2, 4, 6, 8, 10]
 
-// console.log(evenFn(15)); // [2, 4, 6, 8, 10, 12, 14]
+console.log(evenFn(15)); // [2, 4, 6, 8, 10, 12, 14]
 
-// console.log(evenFn(20)); // [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+console.log(evenFn(20)); // [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
 /*
  * #5
@@ -90,17 +96,17 @@ console.log(defUpperStr()); // DEFAULT TEXT
  * В реализации функции обязательно должны быть использованы операторы switch / case / default.
  */
 
-// console.log(weekFn(1)); // 'Понедельник'
+console.log(weekFn(1)); // 'Понедельник'
 
-// console.log(weekFn(3)); // 'Среда'
+console.log(weekFn(3)); // 'Среда'
 
-// console.log(weekFn(7)); // 'Воскресенье'
+console.log(weekFn(7)); // 'Воскресенье'
 
-// console.log(weekFn(9)); // null
+console.log(weekFn(9)); // null
 
-// console.log(weekFn(1.5)); // null
+console.log(weekFn(1.5)); // null
 
-// console.log(weekFn('2')); // null
+console.log(weekFn('2')); // null
 
 /*
  * #6
