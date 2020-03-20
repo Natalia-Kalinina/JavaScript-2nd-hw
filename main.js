@@ -95,7 +95,26 @@ console.log(evenFn(20)); // [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
  *
  * В реализации функции обязательно должны быть использованы операторы switch / case / default.
  */
+function  weekFn(n) {
+    switch(n) {
+        case 1: return 'Понедельник';
+        break;
+        case 2: return 'Вторник';
+        break;
+        case 3: return 'Среда';
+        break;
+        case 4: return 'Четверг';
+        break;
+        case 5: return 'Пятница';
+        break;
+        case 6: return 'Суббота';
+        break;
+        case 7: return 'Воскресенье';
+        break;
 
+        default: return null;
+    }
+}
 console.log(weekFn(1)); // 'Понедельник'
 
 console.log(weekFn(3)); // 'Среда'
