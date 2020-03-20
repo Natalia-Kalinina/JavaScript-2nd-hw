@@ -98,19 +98,12 @@ console.log(evenFn(20)); // [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 function  weekFn(n) {
     switch(n) {
         case 1: return 'Понедельник';
-        break;
         case 2: return 'Вторник';
-        break;
         case 3: return 'Среда';
-        break;
         case 4: return 'Четверг';
-        break;
         case 5: return 'Пятница';
-        break;
         case 6: return 'Суббота';
-        break;
         case 7: return 'Воскресенье';
-        break;
 
         default: return null;
     }
@@ -144,22 +137,33 @@ console.log(weekFn('2')); // null
  * При выполнении задания допускается использовать только тернарный оператор ?.
  * Использование операторов if, switch – запрещено.
  */
+function ageClassification(n) {
+    var age = n < 0 ? null :
+    n >= 0 && n <= 24 ? 'детский возраст' :
+    n > 24 && n <= 44 ? 'молодой возраст' :
+    n > 44 && n <= 65 ? 'средний возраст' :
+    n > 65 && n <= 75 ? 'пожилой возраст' :
+    n > 75 && n <= 90 ? 'старческий возраст' :
+    n > 90 && n <= 122 ? 'долгожители' : null;
 
-// console.log('-1 :', ageClassification(-1)); // -1 : null
+    return age;
+}
 
-// console.log('5 :', ageClassification(5)); // 5 : детский возраст
+console.log('-1 :', ageClassification(-1)); // -1 : null
 
-// console.log('34 :', ageClassification(34)); // -1 : null
+console.log('5 :', ageClassification(5)); // 5 : детский возраст
 
-// console.log('50 :', ageClassification(50)); // 50 : средний возраст
+console.log('34 :', ageClassification(34)); // -1 : null
 
-// console.log('65.1 :', ageClassification(65.1)); // 65.1 : пожилой возраст
+console.log('50 :', ageClassification(50)); // 50 : средний возраст
 
-// console.log('80 :', ageClassification(80)); // 80 : старческий возраст
+console.log('65.1 :', ageClassification(65.1)); // 65.1 : пожилой возраст
 
-// console.log('110 :', ageClassification(110)); // 110 : долгожители
+console.log('80 :', ageClassification(80)); // 80 : старческий возраст
 
-// console.log('130 :', ageClassification(130)); // 130 : null
+console.log('110 :', ageClassification(110)); // 110 : долгожители
+
+console.log('130 :', ageClassification(130)); // 130 : null
 
 /*
  * Блок тестирования:
